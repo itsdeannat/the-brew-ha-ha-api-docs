@@ -1,0 +1,47 @@
+---
+title: Getting started with the Brew Ha Ha API  
+description: A guide to making API calls with the Brew Ha Ha API.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from 'astro-expressive-code/components';
+import register from '/src/snippets/register.sh?raw';
+import register_success from '/src/snippets/register_success.sh?raw';
+
+
+The Brew Ha Ha API includes several endpoints that allow client applications to get a list of supported drinks and snacks. The API also returns JSON data and uses traditional HTTP methods to perform actions on data. Support for other programming languages is in development.
+
+In this guide, you'll register with the API, get a JSON Web Token (JWT) so you can make calls to the API, and then send a test request to the server.
+
+## Before you begin 
+
+To begin using the API, you need to complete two steps:
+
+<Steps>
+
+1. Register with the Brew Ha Ha API
+2. Get a JWT to make API requests
+
+</Steps>
+
+### Register with the Brew Ha Ha API
+
+Before you can get a JWT, you need to register with the Brew Ha Ha API. Your username and password can only consist of letters and numbers.
+
+To register with the API:
+
+<Steps>
+
+1. Open a terminal and run the following command:   
+
+   <Code code={register} lang="shellscript" title="register.sh" />
+
+    You'll see the following message after you register with the API:
+
+    <Code code={register_success} lang="shellscript" title="register_success.sh" />
+
+</Steps>
+
+## Make your first API call 
+
+## Next steps
