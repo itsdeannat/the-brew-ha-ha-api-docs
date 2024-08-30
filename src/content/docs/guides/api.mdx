@@ -5,8 +5,13 @@ description: A guide to making API calls with the Brew Ha Ha API.
 
 import { Steps } from '@astrojs/starlight/components';
 import { Code } from 'astro-expressive-code/components';
+import { Aside } from '@astrojs/starlight/components';
 import register from '/src/snippets/register.sh?raw';
 import register_success from '/src/snippets/register_success.sh?raw';
+import request_jwt from '/src/snippets/request_jwt.sh?raw';
+import request_jwt_success from '/src/snippets/request_jwt_success.sh?raw';
+import request_refresh_jwt from '/src/snippets/request_refresh_jwt.sh?raw';
+import request_refresh_jwt_success from '/src/snippets/request_refresh_jwt_success.sh?raw';
 
 
 The Brew Ha Ha API includes several endpoints that allow client applications to get a list of supported drinks and snacks. The API also returns JSON data and uses traditional HTTP methods to perform actions on data. Support for other programming languages is in development.
@@ -39,6 +44,50 @@ To register with the API:
     You'll see the following message after you register with the API:
 
     <Code code={register_success} lang="shellscript" title="register_success.sh" />
+
+</Steps>
+
+### Request a JSON Web Token
+
+After you register with the API, you need to request a JSON Web Token (JWT) so you can access resources. Without a JWT, you will not be able to make `GET` or `POST` requests to the Brew Ha Ha API. 
+
+To request a JWT:
+
+<Steps>
+
+1. In your terminal, run the following command:
+
+    <Code code={request_jwt} lang="shellscript" title="request_jwt.sh" />
+
+    You'll receive an access token and a refresh token after you send your credentials:
+
+    <Code code={request_jwt_success} lang="shellscript" title="request_jwt_success.sh" />
+
+    <Aside type="caution">
+    Be sure to store your access token and refresh token in a secure location.
+    </Aside>
+
+</Steps>
+
+### Request a refresh token 
+
+When the access token expires, you can use the refresh token to request a new access token. 
+
+To request a new access token:
+
+<Steps>
+
+1. In your terminal, run the following command:
+
+    <Code code={request_refresh_jwt} lang="shellscript" title="request_refresh_jwt.sh" />
+
+    You'll receive an access token and a refresh token after you send your credentials:
+
+    <Code code={request_refresh_jwt_success} lang="shellscript" title="request_refresh_jwt_success.sh" />
+
+    <Aside type="caution">
+    Be sure to store your access token in a secure location.
+    </Aside>
 
 </Steps>
 
