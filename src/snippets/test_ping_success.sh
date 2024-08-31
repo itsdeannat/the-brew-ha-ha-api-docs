@@ -1,0 +1,3 @@
+{
+    "message": "Test ping successful!"
+}

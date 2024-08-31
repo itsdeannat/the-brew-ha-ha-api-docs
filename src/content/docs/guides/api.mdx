@@ -12,6 +12,8 @@ import request_jwt from '/src/snippets/request_jwt.sh?raw';
 import request_jwt_success from '/src/snippets/request_jwt_success.sh?raw';
 import request_refresh_jwt from '/src/snippets/request_refresh_jwt.sh?raw';
 import request_refresh_jwt_success from '/src/snippets/request_refresh_jwt_success.sh?raw';
+import test_ping from '/src/snippets/test_ping.sh?raw';
+import test_ping_success from '/src/snippets/test_ping_success.sh?raw';
 
 
 The Brew Ha Ha API includes several endpoints that allow client applications to get a list of supported drinks and snacks. The API also returns JSON data and uses traditional HTTP methods to perform actions on data. Support for other programming languages is in development.
@@ -29,7 +31,7 @@ To begin using the API, you need to complete two steps:
 
 </Steps>
 
-### Register with the Brew Ha Ha API
+## Register with the Brew Ha Ha API
 
 Before you can get a JWT, you need to register with the Brew Ha Ha API. Your username and password can only consist of letters and numbers.
 
@@ -47,7 +49,7 @@ To register with the API:
 
 </Steps>
 
-### Request a JSON Web Token
+## Request a JSON Web Token
 
 After you register with the API, you need to request a JSON Web Token (JWT) so you can access resources. Without a JWT, you will not be able to make `GET` or `POST` requests to the Brew Ha Ha API. 
 
@@ -91,6 +93,24 @@ To request a new access token:
 
 </Steps>
 
-## Make your first API call 
+## Send a test ping to the server
+
+Now that you have registered with the API and received a JWT, you can send a test ping to the server. This step verifies that you can send calls to the Brew Ha Ha API. 
+
+To send a test ping:
+
+<Steps>
+
+1. In your terminal, run the following command:
+
+    <Code code={test_ping} lang="shellscript" title="test_ping.sh" />
+
+   You'll receive a successful message indicating that you successfully pinged the server:
+
+   <Code code={test_ping_success} lang="shellscript" title="test_ping_success.sh" />
+
+</Steps>
 
 ## Next steps
+
+Congratulations! You've successfully registered with the API, received a JWT, and made your first call to the API. Next, consider reading some of the tutorials and guides to explore the Brew Ha Ha API functionality. 
