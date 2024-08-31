@@ -5,7 +5,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Brew API Docs',
+			title: 'Brew Ha Ha API Docs',
 			social: {
 				github: 'https://github.com/itsdeannat/the-brew-ha-ha-api-docs.git',
 			},
