@@ -18,6 +18,12 @@ export default defineConfig({
 					],
 				},
 				{
+					label: 'Guides',
+					items: [
+						{ label: 'Get a collection of resources', slug: 'guides/get-resources'}
+					]
+				},
+				{
 					label: 'Reference',
 					autogenerate: { directory: 'reference' },
 				},

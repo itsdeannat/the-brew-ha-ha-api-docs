@@ -1,0 +1,39 @@
+---
+title: Making GET requests with the Brew Ha Ha API
+description: A guide to making API calls with the Brew Ha Ha API.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from 'astro-expressive-code/components';
+import { Aside } from '@astrojs/starlight/components';
+import get_request_collection from '/src/snippets/get_requests/get_request_collection.sh?raw';
+import get_request_collection_response from '/src/snippets/get_requests/get_request_collection_response.sh?raw';
+
+
+The Brew Ha Ha API includes an endpoint that allows client applications to `GET` a collection of resources. 
+
+In this guide, you'll make a `GET` request to the `/coffees` endpoint to get a list of all coffees in the database. 
+
+## Before you begin 
+
+Before you make a `GET` request, ensure that you have an access token. For instructions on requesting an access token, see [Request a JSON Web Token](./api#request-a-json-web-token).
+
+## Make a GET request
+
+<Steps>
+
+1. Open a terminal and run the following command:
+
+   <Code code={get_request_collection} lang="shellscript" title="get_request_collection.sh" />
+
+    The API returns a `200 OK` and list of all coffees available for purchase:
+
+    <Code code={get_request_collection_response} lang="shellscript" title="get_request_collection_response.sh" />
+
+</Steps>
+
+You can use the data from the `GET` request in your application. For example, you could display information about each coffee on a product detail page.
+
+## What to do next
+
+See [GET /coffees/](/api-docs.html#tag/coffees/operation/coffees_retrieve) for a full list of request parameters and response schemas.
