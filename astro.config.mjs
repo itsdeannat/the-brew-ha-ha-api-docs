@@ -20,7 +20,8 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					items: [
-						{ label: 'Get a collection of resources', slug: 'guides/get-resources'}
+						{ label: 'How to get a collection of products', slug: 'guides/get-products'},
+						{ label: 'How to get a product by ID', slug: 'guides/get-product-by-id'}
 					]
 				},
 				{
