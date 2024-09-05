@@ -2,8 +2,11 @@ openapi: 3.0.3
 info:
   title: The Brew Ha Ha API
   version: 1.0.0
-  description: The Brew Ha Ha API allows you to programmatically access our products,
-    securely manage orders, and streamline purchases.
+  description: The Brew Ha Ha API allows third-party applications to access our extensive
+    line of coffee and snack products. As a developer, you can access various endpoints
+    to get a single product, get a collection of products, or place orders. Our API
+    enables seamless integration with popular e-commerce platforms such as Shopfiy,
+    Wix, and Square.
 paths:
   /api/coffees/:
     get:
@@ -430,9 +433,9 @@ components:
         Bearer {token}"'
 tags:
 - name: coffees
-  description: Represents a coffee drink in the Brew Ha Ha inventory.
+  description: Represents coffees in the Brew Ha Ha inventory.
 - name: snacks
-  description: Represents a snack in the Brew Ha Ha inventory.
+  description: Represents snacks in the Brew Ha Ha inventory.
 - name: token
   description: Use these endpoints generate a JSON Web Token (JWT) to authenticate
     your credentials.
