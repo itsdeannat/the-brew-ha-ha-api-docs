@@ -12,7 +12,7 @@ import get_request_collection_response from '/src/snippets/get_requests/get_requ
 
 The Brew Ha Ha API includes an endpoint that allows client applications to `GET` a collection of resources. 
 
-In this guide, you'll make a `GET` request to the `/coffees` endpoint to get a list of all coffees in the database. 
+In this guide, you'll make a `GET` request to the `/products` endpoint to get a list of all products in the database. 
 
 ## Before you begin 
 
@@ -26,14 +26,14 @@ Before you make a `GET` request, ensure that you have an access token. For instr
 
    <Code code={get_request_collection} lang="shellscript" title="get_request_collection.sh" />
 
-    The API returns a `200 OK` and list of all coffees available for purchase:
+    The API returns a `200 OK` and list of products in the database:
 
     <Code code={get_request_collection_response} lang="shellscript" title="get_request_collection_response.sh" />
 
 </Steps>
 
-You can use the data from the `GET` request in your application. For example, you could display information about each coffee on a product detail page.
+You can use the data from the `GET` request in your application. For example, you could display information about each product on a product detail page.
 
 ## What to do next
 
-See [GET /coffees/](/api-docs.html#tag/coffees/operation/retrieve_coffee) for a full list of request parameters and response schemas.
+See [GET /products/](/api-docs.html#tag/products/operation/retrieve_products) for a full list of request parameters and response schemas.

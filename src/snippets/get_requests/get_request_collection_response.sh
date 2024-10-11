@@ -6,24 +6,22 @@
         "caffeine_amount": 105,
         "price": 3.75,
         "description": "A rich, decadent blend of espresso and chocolate",
-        "in_stock": True
+        "quantity": 3
     },
     {
-        "id": "2",
-        "coffee_type": "latte",
-        "temperature": "hot",
-        "caffeine_amount": 95,
-        "price": 2.5,
-        "description": "Rich and smooth brew with a hint of caramel",
-        "in_stock": False
+        "id": 2,                 
+        "product_name": "muffin",
+        "price": 2.50,
+        "description": "A fluffy, warm blueberry muffin",
+        "quantity": 10
     },
     {
-        "id": "3",
-        "coffee_type": "cortado",
+        "id": 3,                 
+        "product_name": "cortado",
         "temperature": "hot",
         "caffeine_amount": 130,
         "price": 4.0,
         "description": "Made with beans picked from the coast of Spain",
-        "in_stock": True
+        "quantity": 5
     }
 ]

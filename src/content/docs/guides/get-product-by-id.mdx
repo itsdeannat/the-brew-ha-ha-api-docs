@@ -12,7 +12,7 @@ import get_request_id_response from '/src/snippets/get_requests/get_request_id_r
 
 The Brew Ha Ha API includes an endpoint that allows client applications to `GET` a product by ID.
 
-In this guide, you'll make a `GET` request to the `/coffees` endpoint to get a specific coffee in the database.
+In this guide, you'll make a `GET` request to the `/products` endpoint to get a specific product in the database.
 
 ## Before you begin 
 
@@ -26,7 +26,7 @@ Before you make a `GET` request, ensure that you have an access token. For instr
 
    <Code code={get_request_id} lang="shellscript" title="get_request_id.sh" />
 
-    The API returns a `200 OK` and list of all coffees available for purchase:
+    The API returns a `200 OK` and returns the product with the selected ID:
 
     <Code code={get_request_id_response} lang="shellscript" title="get_request_id_response.sh" />
 
@@ -36,4 +36,4 @@ You can use the data from the `GET` request in your application. For example, yo
 
 ## What to do next
 
-See [GET /coffees/](/api-docs.html#tag/coffees/operation/list_coffees) for a full list of request parameters and response schemas.
+See [GET /products/](/api-docs.html#tag/products/operation/list_products) for a full list of request parameters and response schemas.
