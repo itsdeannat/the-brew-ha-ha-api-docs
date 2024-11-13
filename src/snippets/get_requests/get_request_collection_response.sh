@@ -9,9 +9,11 @@
         "quantity": 3
     },
     {
-        "id": 2,                 
-        "product_name": "muffin",
-        "price": 2.50,
+        "id": 2,
+        "product_name": "blueberry muffin",
+        "temperature": null,
+        "caffeine_amount": null,
+        "price": 2.5,
         "description": "A fluffy, warm blueberry muffin",
         "quantity": 10
     },
