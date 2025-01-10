@@ -21,7 +21,8 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						{ label: 'How to get a collection of products', slug: 'guides/get-products'},
-						{ label: 'How to get a product by ID', slug: 'guides/get-product-by-id'}
+						{ label: 'How to get a product by ID', slug: 'guides/get-product-by-id'},
+						{ label: 'How to create an order', slug: 'guides/create-an-order'}
 					]
 				},
 				{
