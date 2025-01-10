@@ -1,0 +1,38 @@
+---
+title: How to create an order
+description: A guide to ordering products using the Brew Ha Ha API
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from 'astro-expressive-code/components';
+import post_order from '/src/snippets/post_requests/post_order.sh?raw';
+import post_order_response from '/src/snippets/post_requests/post_order_response.sh?raw';
+
+
+The Brew Ha Ha API includes an endpoint that allows client applications to submit new orders to the database. 
+
+In this guide, you'll make a `POST` request to the `/orders/` endpoint to order a coffee. 
+
+## Before you begin 
+
+Before you make a `POST` request, ensure that you have an access token. For instructions on requesting an access token, see [Request a JSON Web Token](./api#request-a-json-web-token).
+
+## Make a POST request
+
+<Steps>
+
+1. Open a terminal and run the following command:
+
+    <Code code={post_order} lang="shellscript" title="post_order.sh" />
+
+    The API returns a `201 CREATED` and returns the details of your order:
+
+    <Code code={post_order_response} lang="shellscript" title="post_order_response.sh" />
+
+</Steps>
+
+You can use the data from the `POST` request in your application. For example, you could display the order date and list of products to your users. 
+
+## What to do next
+
+See [POST /orders/](/api-docs#tag/orders/operation/create_order) for a full list of request parameters and response schemas.
