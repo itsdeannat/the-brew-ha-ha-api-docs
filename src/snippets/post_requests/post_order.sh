@@ -2,8 +2,8 @@
     "payment_method": "Credit",
     "order_items": [
         {
-            "product_id": 1,
-            "quantity": 2
+            "product_id": 2,
+            "quantity": 1
         }
     ]     
 }
