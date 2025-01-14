@@ -1,0 +1,38 @@
+---
+title: How to get an order by ID
+description: A guide to retrieving orders using the Brew Ha Ha API
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import { Code } from 'astro-expressive-code/components';
+import get_order from '/src/snippets/get_requests/get_order.sh?raw';
+import get_order_response from '/src/snippets/get_requests/get_order_response.sh?raw';
+
+
+The Brew Ha Ha API includes an endpoint that allows client applications to retrieve their order from the database. 
+
+In this guide, you'll make a `GET` request to the `/orders/` endpoint to retrieve an order. 
+
+## Before you begin 
+
+Before you make a `GET` request, ensure that you have an access token. For instructions on requesting an access token, see [Request a JSON Web Token](./api#request-a-json-web-token).
+
+## Make a GET request
+
+<Steps>
+
+1. Open a terminal and run the following command:
+
+    <Code code={get_order} lang="shellscript" title="get_order.sh" />
+
+    The API returns a `200 OK` and returns the order with the selected ID:
+
+    <Code code={get_order_response} lang="shellscript" title="get_order_response.sh" />
+
+</Steps>
+
+You can use the data from the `GET` request in your application. For example, you could display the order date, list of products, and order ID to the user.
+
+## What to do next
+
+See [GET /orders/](/api-docs.html#tag/orders/operation/retrieve_orders) for a full list of request parameters and response schemas.
