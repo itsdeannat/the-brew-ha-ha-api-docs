@@ -1,0 +1,30 @@
+---
+title: Authentication
+description: A guide to authenticating with the Brew Ha Ha API
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+There are many different types of API authentication, such as:
+* Personal access tokens (PAT)
+* OAuth
+* JSON Web Tokens (JWT)
+* Basic authentication
+
+The Brew Ha Ha API uses JWTs for authentication. JWTs are a popular choice for user authentication with APIs because they are stateless, meaning that the server does not need to store session information. This reduces server load and can improve response times from the API.
+
+## JSON Web Tokens (JWT)
+
+JWTs are a secure way to transmit information between parties (usually a client and a server) as a JSON object. This API uses [Simple JWT ](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/) for JWT authentication. Simple JWT is a JSON web token authentication plugin for the Django REST Framework.
+
+After you sign up for the Brew Ha Ha API, you receive an access token and a refresh token. The access token is only valid for 15 minutes. 
+
+After the access token expires, you must use your refresh token to get a new access token. The refresh token is only valid for 24 hours.
+
+<Aside type="note">
+    When you use your refresh token to get a new access token, the server also issues a new refresh token. The old refresh token is invalidated and cannot be used.
+</Aside>
+
+## How to request a JWT
+
+After you sign up for the API, you send a POST request to the `/tokens/` endpoint to request a JWT. See [Request a JSON Web Token](./api) for more information.
