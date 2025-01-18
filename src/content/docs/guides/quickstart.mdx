@@ -27,7 +27,7 @@ To begin using the API, you need to complete two steps:
 <Steps>
 
 1. Sign up for the Brew Ha Ha API
-2. Get a JWT to make API requests
+2. Get a JSON Web Token (JWT) to make API requests
 
 </Steps>
 
@@ -65,15 +65,11 @@ To request a JWT:
 
     <Code code={request_jwt_success} lang="shellscript" title="request_jwt_success.sh" />
 
-    <Aside type="caution">
-    Be sure to store your access token and refresh token in a secure location.
-    </Aside>
-
 </Steps>
 
 ### Request a refresh token 
 
-When the access token expires, you can use the refresh token to request a new access token. 
+The access token expires after 15 minutes. You can use the refresh token to request a new access token. 
 
 To request a new access token:
 
@@ -88,7 +84,7 @@ To request a new access token:
     <Code code={request_refresh_jwt_success} lang="shellscript" title="request_refresh_jwt_success.sh" />
 
     <Aside type="caution">
-    Be sure to store your access token in a secure location.
+    Be sure to store your refresh token in a secure location. Your refresh token is valid for 24 hours. See [Authentication](./authentication) for more information.
     </Aside>
 
 </Steps>
