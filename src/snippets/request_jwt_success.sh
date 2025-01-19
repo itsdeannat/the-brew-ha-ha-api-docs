@@ -1,4 +1,4 @@
 {
-    "refresh": "XXXXXXX",
-    "access": "XXXXXXX"
+    "access": "XXXXXXX",
+    "refresh": "XXXXXXX"
 }

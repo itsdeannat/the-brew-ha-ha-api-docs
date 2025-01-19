@@ -14,20 +14,22 @@ export default defineConfig({
 					label: 'Start here',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Getting started', slug: 'guides/api' },
+						{ label: 'About the API', slug: 'guides/about-the-api'},
+						{ label: 'Quick start guide', slug: 'guides/quickstart' }
 					],
 				},
 				{
-					label: 'Guides',
+					label: 'Feature guides',
 					items: [
-						{ label: 'How to get a collection of products', slug: 'guides/get-products'},
-						{ label: 'How to get a product by ID', slug: 'guides/get-product-by-id'},
-						{ label: 'How to create an order', slug: 'guides/create-an-order'},
-						{ label: 'How to get an order', slug: 'guides/get-order-by-id'}
+						{ label: 'Authentication', slug: 'guides/authentication' },
+						{ label: 'How to get a collection of products', slug: 'guides/get-products' },
+						{ label: 'How to get a product by ID', slug: 'guides/get-product-by-id' },
+						{ label: 'How to create an order', slug: 'guides/create-an-order' },
+						{ label: 'How to get an order', slug: 'guides/get-order-by-id' }
 					]
 				},
 				{
-					label: 'Reference',
+					label: ' API reference',
 					autogenerate: { directory: 'reference' },
 				},
 			],

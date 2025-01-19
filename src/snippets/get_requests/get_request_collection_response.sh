@@ -1,7 +1,7 @@
 "results": [
     {
         "id": 1,
-        "coffee_type": "mocha",
+        "product_name": "mocha",
         "temperature": "hot",
         "caffeine_amount": 105,
         "price": 3.75,
