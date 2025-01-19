@@ -6,8 +6,7 @@
     "order_items": [
         {
             "product_id": 2,
-            "quantity": 1,
-            "product_name": "blueberry muffin"
+            "quantity": 1
         }
     ]
 }
